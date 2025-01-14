@@ -32,5 +32,5 @@
  user2.upi = "edr@ert"; // here now user2 and user has changed both because the non-premitive values 
  // are stored in the Heap and when you access you get reference to that 
  console.log(user2);
- console.log(user)
+ console.log(user);
  
