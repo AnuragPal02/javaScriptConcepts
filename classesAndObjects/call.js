@@ -1,8 +1,8 @@
-;
+
 
 function setUserName(username){
     this.username = username
-    console.log(`this is username ${username}`);
+    console.log(`this is username ${this.username}`);
 }
 
 const createUser = function(username,email,number){
