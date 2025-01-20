@@ -1,30 +1,35 @@
 
 
-// const user = {
-//     username : "anurag",
-//     age : 22,
+// // const user = {
+// //     username : "anurag",
+// //     age : 22,
 
-//     myFunction : function(){
-//         console.log(this);
-//     }
+// //     myFunction : function(){
+// //         console.log(this);
+// //     }
+// // }
+
+// // console.log(user.__proto__);
+
+// function User(username,age,loggedIn){
+//     this.username = username;
+//     this.age = age;
+//     this.loggedIn = loggedIn;
+
+//      return this;
 // }
+// const user1 = User("anurag",22,'true');
+// console.log(user1)
+// // console.log(User.this);
 
-// console.log(user.__proto__);
 
-function User(username,age,loggedIn){
-    this.username = username;
-    this.age = age;
-    this.loggedIn = loggedIn;
-
-     return this;
+const user = {
+    name : 'anurag'
 }
 
-const firstUser = new User("anurag",22,'true');
-// console.log(firstUser);
+Object.prototype.Anurag = function(){
+    console.log(this);
+    console.log('Its me Anurag');
+}
 
-const secondUser = new User("ankit",25,'false');
-console.log(firstUser);
-
-console.log(firstUser.constructor);
-// constructor function gives us new instance 
-
+user.Anurag();
